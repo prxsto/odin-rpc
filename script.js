@@ -2,7 +2,7 @@ function getPlayerChoice() {
   let playerInput = prompt("Select rock, paper, or scissors");
   let validChoices = ['rock', 'paper', 'scissors'];
   playerInput = playerInput.toLowerCase();
-  while (!validChoices.includes(playerInput)) {
+  if (!validChoices.includes(playerInput)) {
     playerInput = prompt("Please enter a valid choice. Select select either \'rock\', \'paper\', or \'scissors\'")
   }
   return playerInput;
